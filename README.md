@@ -1,33 +1,6 @@
 # Leshua Pay
 乐刷聚合支付 PHP SDK
 
-非官方
-
-欢迎开发者进行技术讨论，反馈共建。
-
-商用时，具体逻辑请与乐刷技术支持确定。
-
-## 特性
-- [x] 参数组装
-- [ ] 参数格式校验
-- [x] 签名
-- [x] 返回验证签名
-- [ ] 日志记录
-- [ ] DEBUG 模式
-- [x] 开箱即用，无其他依赖
-- [ ] 单元测试
-
-## 定位
-- 好用
-- 易懂
-- 便于改造
-- 开源精神
-
-## 编写原则
-- 面向对象
-- 参数说明详细清晰有意义
-- 按照实际业务有参数顺序有调整，或修改用词表达
-- 乐刷返回参数仅做数据格式转换，不做任何字段及类型变形或改变
 
 ## 文件目录
 ```
@@ -60,48 +33,4 @@ src/
   - LeshuaClient.php SDK 客户端类，充当本 SDK 的客户端，把各请求类定义好的 URL 、参数、特殊 header 设置，组装发送出去，并返回结果
 
 ```
-
-## 用法
-```php
-<?php
-require "vendor/autoload.php";
-
-try{
-  $qr = new QRPay();
-  // 可链式调用
-  // 输入 `set` IDE 会提示所有支持参数，对应请求类里 public 权限的 set 开头方法
-  $qr->setMerchantId('1234567890')
-    ->setThirdOrderId('2011035660004545455xxx')
-    ->setNotifyUrl('http://www.you-url.com/path');
-   // ...
-
-    $ret = $client->send($qr);
-} catch (BadRequestException $e) {
-    die($e->getMessage());
-} catch (VerifyFailureException $e) {
-    die($e->getMessage());
-}
-```
-
-```php
-<?php
-//商户进件
-require "vendor/autoload.php";
-
-try{
-  $regist = new Register(Config::MERCHANT_REGISTER);
-  // 可链式调用
-
-    $ret = $client->send($regist);
-} catch (BadRequestException $e) {
-    die($e->getMessage());
-} catch (VerifyFailureException $e) {
-    die($e->getMessage());
-}
-```
-
-## 开发日志
-| 版本号 | 日期 | 说明 |
-| --- | --- | --- |
-| 0.0.1  | 20210905 | 初始化版本，支付相关接口已定义好，待调试反馈 |
 
