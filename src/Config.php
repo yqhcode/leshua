@@ -14,7 +14,6 @@ class Config
      * 在进件相关会用到
      */
 //    const AGENT_ID = '10';  //测试
-    const AGENT_ID = '3206155';  //正式
 
     /**
      * 接口版本号
@@ -27,22 +26,18 @@ class Config
      * 渠道商固定key值
      */
 //    const KEY_AGENT = '17B10781A8C5178870197906F71749D8'; //测试
-    const KEY_AGENT = '96B3DADB0F6E4591AEC3C87FDE326D08'; //正式
 
     /**
      * TODO
      * 商户密钥，交易相关的签名秘钥
      */
 //    const KEY_TRANSACTION = 'a1613a0e7cb9d3a51e33784ee4d212ac'; //测试
-    const KEY_TRANSACTION = '96B3DADB0F6E4591AEC3C87FDE326D08'; //正式
-//    const KEY_TRANSACTION = '133A71DA6AA846C0BDC318DB63E8CE94'; //正式
 
     /**
      * 交易相关接口
      * 生产环境
      */
 //    const PAYMENT_API_URL = 'https://t-paygate.lepass.cn/cgi-bin/lepos_pay_gateway.cgi';  //测试
-    const PAYMENT_API_URL = 'https://paygate.leshuazf.com/cgi-bin/lepos_pay_gateway.cgi'; //正式
 
     /**
      * 商户进件环境域名
@@ -50,14 +45,12 @@ class Config
      * 生产环境域名：https://saas-mch.leshuazf.com/apiv2
      */
 //    const MCH_API_URL = 'http://t-saas-mch.lepass.cn/apiv2';  //测试
-    const MCH_API_URL = 'https://saas-mch.leshuazf.com/apiv2'; //正式
     /**
      * 附录+分账域名
      * 测试环境域名：http://t-saas-mch.lepass.cn
      * 生产环境域名：https://saas-mch.leshuazf.com
      */
 //    const APPENDIX_API_URL = 'http://t-saas-mch.lepass.cn';  //测试
-    const APPENDIX_API_URL = 'https://saas-mch.leshuazf.com'; //正式
     /**
      * 商户进件URL
      */
