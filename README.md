@@ -30,7 +30,7 @@ src/
                   - SignUtil.php 签名工具类，签名、验证相关具体逻辑都放在这里
                   - StrUtil.php 字符工具类，随机字符、请求流水号、xml 转 array
   - Config.php 配置类，需要灵活配置的参数相关
-  - LeshuaClient.php SDK 客户端类，充当本 SDK 的客户端，把各请求类定义好的 URL 、参数、特殊 header 设置，组装发送出去，并返回结果
+  - LeshuaClient.php SDK 客户端类，充当本 SDK 的客户端，把各请求类定义好的 URL 、参数、特殊 header 设置，组装发送出去，并返回结果.
 
 ```
 
